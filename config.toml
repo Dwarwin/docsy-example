@@ -56,7 +56,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Docsy"
+title = "Test Example"
 description = "Docsy does docs"
 languageName ="English"
 # Weight used for sorting.
