@@ -1,5 +1,5 @@
 baseURL = ""
-title = "Test"
+title = "CDAP"
 
 enableRobotsTXT = true
 
@@ -34,13 +34,6 @@ pygmentsStyle = "tango"
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
 
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
-[blackfriday]
-plainIDAnchors = true
-hrefTargetBlank = true
-angledQuotes = false
-latexDashes = true
-
 # Image processing configuration.
 [imaging]
 resampleFilter = "CatmullRom"
@@ -56,16 +49,11 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Docsy"
-description = "Docsy does docs"
+title = "CDAP"
+description = "Custom description"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Docsy"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
@@ -75,7 +63,7 @@ time_format_blog = "02.01.2006"
 [params]
 copyright = "Global Inc"
 privacy_policy = "https://policies.google.com/privacy"
-github_repo = "https://github.com/google/docsy-example"
+github_repo = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
@@ -94,41 +82,61 @@ breadcrumb_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 
-[params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-	name = "User mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-	name ="Twitter"
-	url = "https://example.org/twitter"
-	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-	name = "Stack Overflow"
-	url = "https://example.org/stack"
-	icon = "fab fa-stack-overflow"
-        desc = "Practical questions and curated answers"
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/google/docsy"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
-[[params.links.developer]]
-	name = "Slack"
-	url = "https://example.org/slack"
-	icon = "fab fa-slack"
-        desc = "Chat with other project developers"
-[[params.links.developer]]
-	name = "Developer mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discuss development issues around the project"
+[[languages.en.menu.main]]
+identifier = "Get Started"
+name = "GET STARTED"
+weight = 10
 
+[[languages.en.menu.main]]
+identifier = "Downloads"
+name = "DOWNLOADS"
+weight = 20
 
+[[languages.en.menu.main]]
+identifier = "Case Studies"
+parent = "RESOURCES"
+name = "Case Studies"
+weight = 1
+
+[[languages.en.menu.main]]
+identifier = "Accelerators"
+parent = "RESOURCES"
+name = "Accelerators"
+weight = 2
+
+[[languages.en.menu.main]]
+identifier = "Plugins"
+parent = "RESOURCES"
+name = "Plugins"
+weight = 3
+
+[[languages.en.menu.main]]
+identifier = "Videos"
+parent = "RESOURCES"
+name = "Videos"
+weight = 4
+
+[[languages.en.menu.main]]
+identifier = "Documentation"
+parent = "RESOURCES"
+post = "<i class='fas fa-external-link-alt external-link-icon'></i>"
+name = "Documentation"
+weight = 5
+
+[[languages.en.menu.main]]
+identifier = "Blog"
+parent = "RESOURCES"
+post = "<i class='fas fa-external-link-alt external-link-icon'></i>"
+name = "Blog"
+weight = 6
+
+[[languages.en.menu.main]]
+identifier = "RESOURCES"
+name = "RESOURCES"
+weight = 30
+
+[[languages.en.menu.main]]
+identifier = "Community"
+name = "COMMUNITY"
+weight = 40

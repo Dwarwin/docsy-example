@@ -1,5 +1,14 @@
-
-public/
+# dependencies
 node_modules/
-tech-doc-hugo
+
+# production
+public/
+tech-doc-hugo/
+
+# IDE
 .idea/
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
