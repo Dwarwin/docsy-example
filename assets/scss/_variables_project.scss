@@ -4,3 +4,7 @@ Add styles or override variables from the theme here.
 
 */
 
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints",
+"../../themes/docsy/assets/vendor/bootstrap/scss/functions",
+"../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot",
+"../../themes/docsy/assets/vendor/bootstrap/scss/variables";
